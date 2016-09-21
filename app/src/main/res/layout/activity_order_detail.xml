@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context="com.zj.mpocket.activity.OrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ECECF3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_tip" />
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/main_black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvRedpacketAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvKoudaiAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRealOrderAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvOrderAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvPayCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvOrderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlRetunPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnRetunPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_selector_login"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="退款"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zj.mpocket">
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.zj.mpocket.PocketApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.zj.mpocket.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zj.mpocket.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.MerchantManageActivity"
+            android:label="@string/merchant_manage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.CodeCheckActivity"
+            android:label="@string/title_activity_code_check"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.MerchantComeInActivity"
+            android:label="@string/title_activity_merchant_come_in"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.MerchantInfoActivity"
+            android:label="@string/title_activity_merchant_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.DiscountRateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.ModifyPwdActivity"
+            android:label="@string/title_activity_modify_pwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.QRcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.MerchantLoanActivity"
+            android:label="@string/title_activity_merchant_loan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.zj.mpocket.activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.LicenseActivity"
+            android:label="@string/title_activity_license"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.MerchantOrderListActivity"
+            android:label="@string/title_activity_merchant_order_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.CheckRegisterActivity"
+            android:label="@string/check_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.GalleryActivity"
+            android:label="@string/gallery_select"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.StoreInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.LoanSuccessfulActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.EditStoreActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.zj.mpocket.activity.PreviewStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zj.mpocket.activity.RedPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.zj.mpocket.service.DownloadService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="P0uwy0ORtKFf0uDcmpP3GPEwbqVnMgfl" />
+
+    </application>
+
+</manifest>

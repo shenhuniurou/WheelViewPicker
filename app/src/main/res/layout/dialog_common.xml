@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="7dp"
+              android:background="#EBEBEB"
+              android:orientation="vertical">
+
+    <com.zj.mpocket.view.DialogTitleView
+        android:id="@+id/dialog_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:padding="30dp"/>
+
+    <View
+        android:id="@+id/button_bar_divider"
+        style="@style/section_item_divider"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negative_bt"
+            style="@style/dialog_button"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/button_divder"
+            style="@style/section_item_divider_vertical"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/positive_bt"
+            style="@style/dialog_button_p"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

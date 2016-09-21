@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context="com.zj.mpocket.activity.ModifyPwdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/old_pwd"
+            android:textColor="@color/main_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etOldPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:drawablePadding="8dp"
+            android:hint="@string/input_old_pwd"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_light"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#CDCDCD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/new_pwd"
+            android:textColor="@color/main_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNewPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:drawablePadding="8dp"
+            android:hint="@string/input_new_pwd"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_light"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#CDCDCD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/confirm_pwd"
+            android:textColor="@color/main_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etConfirmPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:drawablePadding="8dp"
+            android:hint="@string/input_new_pwd_again"
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_light"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_selector_login"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

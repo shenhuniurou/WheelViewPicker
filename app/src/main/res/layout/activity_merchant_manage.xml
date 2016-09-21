@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llTodayAmt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_selector_item"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="@string/today_come_in"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvTodaySettle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="0.00"
+                            android:textColor="#D6B36D"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#CDCDCD" />
+
+                    <LinearLayout
+                        android:id="@+id/llLoanSettle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_selector_item"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="@string/loan_limit"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvLoanSettle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="0.00"
+                            android:textColor="#D6B36D"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.zj.mpocket.view.CustomGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/llAmt"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="1dp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_selector_login"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/animProgress"
+            style="@style/loading"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/animProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="加载中"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

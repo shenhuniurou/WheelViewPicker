@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.zj.mpocket.activity.MerchantComeInActivity">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llYesterdayAmt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector_item"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_moneybag"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="@string/yesterday_come_in"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvYesterdaySettleAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="0.00"
+                android:textColor="#D6B36D"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#CDCDCD" />
+
+        <LinearLayout
+            android:id="@+id/llRedPackage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector_item"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_moneybag"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="@string/red_packets"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvRedPackage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="0.00"
+                android:textColor="#D6B36D"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.zj.mpocket.view.LoadMoreRecyclerView
+        android:id="@+id/rvComein"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTop"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:scrollbars="vertical">
+
+    </com.zj.mpocket.view.LoadMoreRecyclerView>
+
+</RelativeLayout>

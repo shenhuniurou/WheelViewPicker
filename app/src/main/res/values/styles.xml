@@ -1,0 +1,184 @@
+<resources>
+
+	<style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo">
+    </style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/popup_hidden_anim</item>
+    </style>
+
+    <style name="Widget"></style>
+
+    <style name="Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+
+    <style name="wrap_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fullline_view">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="dialog_title" parent="@style/fullline_view">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF9932</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="dialog_subtitle" parent="@style/fullline_view">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="dialog_divider">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">#FF9932</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0px</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="dialog_common" parent="Base.Theme.AppCompat.Dialog.FixedSize">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="dialog_bottom" parent="@style/dialog_common">
+        <item name="android:windowBackground">@drawable/dialog_bottom_background</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="dialog_waiting" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="section_item_divider">
+        <item name="android:background">@color/ui_dialog_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+
+    <style name="dialog_button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/main_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_selector_dialog_button</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="dialog_button_p">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_selector_dialog_button_p</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">46.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="section_item_divider_vertical">
+        <item name="android:background">@color/ui_dialog_divider</item>
+        <item name="android:layout_width">0.1px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="list_cell_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="list_cell_text_dialog" parent="@style/list_cell_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/ui_dialog_list_text</item>
+    </style>
+
+    <style name="list_cell_divider">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">#cccccc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="text_base" parent="@style/wrap_view">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_multiline" parent="@style/text_base">
+        <item name="android:maxLines">5</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="dialog_pinterest_text" parent="@style/text_multiline">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+</resources>

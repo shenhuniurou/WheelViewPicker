@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#807D6B</color>
+    <color name="colorPrimaryDark">#807D6B</color>
+    <color name="colorAccent">#807D6B</color>
+
+
+    <color name="login_press">#54B4A6</color>
+    <color name="login_normal">#7FC7BD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="main_black">#313131</color>
+    <color name="bold_black">#010101</color>
+    <color name="red">#FF0000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="list_divider_color">#C9C9C9</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="ui_dialog_divider">@color/list_divider_color</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+
+</resources>

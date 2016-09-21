@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvOrderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="粤北特产店"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvOrderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvOrderName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="201-63-887"
+        android:textColor="@color/text_light"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvOrderAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="0.89元"
+        android:textColor="#D6B36D"
+        android:textSize="22sp" />
+
+</RelativeLayout>

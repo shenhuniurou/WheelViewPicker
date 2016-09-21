@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvvvv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="支付码"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/etCheckCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvvvv"
+                android:background="@color/white"
+                android:gravity="right|center_vertical"
+                android:hint="@string/hint_input_pay_code"
+                android:inputType="number"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/text_light"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llCodeStateValid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECF3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_yes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="支付码有效"
+                android:textColor="@color/main_black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCodeStateInvalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECF3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="支付码无效"
+                android:textColor="@color/main_black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_keyboard_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
