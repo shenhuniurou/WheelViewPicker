@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
-    tools:context="com.zj.mpocket.activity.StoreInfoActivity">
+    tools:context="com.zj.wheelview.activity.StoreInfoActivity">
 
     <TextView
         android:id="@+id/tvEditStore"

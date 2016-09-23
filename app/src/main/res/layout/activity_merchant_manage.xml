@@ -95,7 +95,7 @@
                 </LinearLayout>
 
 
-                <com.zj.mpocket.view.CustomGridView
+                <com.zj.wheelview.view.CustomGridView
                     android:id="@+id/gridView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

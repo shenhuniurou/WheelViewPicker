@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#EEEEEE"
     android:orientation="vertical"
-    tools:context="com.zj.mpocket.activity.LoginActivity">
+    tools:context="com.zj.wheelview.activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

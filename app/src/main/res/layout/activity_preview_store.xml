@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
-    tools:context="com.zj.mpocket.activity.EditStoreActivity">
+    tools:context="com.zj.wheelview.activity.EditStoreActivity">
 
     <LinearLayout
         android:id="@+id/llContain"

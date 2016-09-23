@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEEEEE"
-    tools:context="com.zj.mpocket.activity.MerchantComeInActivity">
+    tools:context="com.zj.wheelview.activity.MerchantComeInActivity">
 
     <LinearLayout
         android:id="@+id/llTop"
@@ -84,7 +84,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.zj.mpocket.view.LoadMoreRecyclerView
+    <com.zj.wheelview.view.LoadMoreRecyclerView
         android:id="@+id/rvComein"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -93,6 +93,6 @@
         android:background="@color/white"
         android:scrollbars="vertical">
 
-    </com.zj.mpocket.view.LoadMoreRecyclerView>
+    </com.zj.wheelview.view.LoadMoreRecyclerView>
 
 </RelativeLayout>

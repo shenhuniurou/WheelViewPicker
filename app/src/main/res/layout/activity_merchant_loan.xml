@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#EEEEEE"
     android:orientation="vertical"
-    tools:context="com.zj.mpocket.activity.MerchantLoanActivity">
+    tools:context="com.zj.wheelview.activity.MerchantLoanActivity">
 
     <!-- 申请贷款界面 -->
     <LinearLayout

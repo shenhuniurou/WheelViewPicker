@@ -5,13 +5,13 @@
               android:layout_height="fill_parent"
               android:orientation="horizontal">
 
-    <com.zj.mpocket.view.wheel.WheelView
+    <com.zj.wheelview.view.wheel.WheelView
         android:id="@+id/first"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
 
-    <com.zj.mpocket.view.wheel.WheelView
+    <com.zj.wheelview.view.wheel.WheelView
         android:id="@+id/second"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

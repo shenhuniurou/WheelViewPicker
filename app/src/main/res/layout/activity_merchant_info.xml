@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zj.mpocket.activity.MerchantInfoActivity">
+    tools:context="com.zj.wheelview.activity.MerchantInfoActivity">
 
 
     <LinearLayout

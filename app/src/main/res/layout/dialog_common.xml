@@ -6,7 +6,7 @@
               android:background="#EBEBEB"
               android:orientation="vertical">
 
-    <com.zj.mpocket.view.DialogTitleView
+    <com.zj.wheelview.view.DialogTitleView
         android:id="@+id/dialog_header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="#EEEEEE"
         android:orientation="vertical"
-        tools:context="com.zj.mpocket.activity.EditStoreActivity">
+        tools:context="com.zj.wheelview.activity.EditStoreActivity">
 
 
         <LinearLayout

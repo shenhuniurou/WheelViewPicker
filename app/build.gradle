@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.pocket"
+        applicationId "com.xx.wheelview"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
@@ -26,13 +26,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':library')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.android.support:recyclerview-v7:23.3.0'
     compile 'com.android.support:design:23.3.0'
     compile 'com.android.support:support-v4:23.1.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    compile project(':lib')
+    compile project(':library')
 }
